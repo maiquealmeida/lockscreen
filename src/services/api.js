@@ -1,4 +1,6 @@
-const axios = require('axios')
-const api = axios.create('http://srv-webservice-dev.tsagro.com:2009/api/')
+const axios = require('axios');
+const { ENDPOINT } = require('../config/auth');
 
-module.exports = api
+const api = axios.create(ENDPOINT);
+
+module.exports = api;
